@@ -1,0 +1,48 @@
+- Digital Audio Workstation:
+  url : "https://github.com/epritchard13/FPGA-DAW"
+  branch: "main"
+  mentor_last_name: "Pritchard"
+- Smart Water Bottle:
+  url : "https://github.com/KGouttumukkala/SmartWaterBottle"
+  branch: "main"
+  mentor_last_name: "Forsyth" 
+- FPV Car:
+  url : "https://github.com/Amp-Lab-at-VT/FPV-Car"
+  branch: "main"
+  mentor_last_name: "Forsyth" 
+- 8-Bit Computer:
+  url: https://github.com/Rohit-Rangaraj/8-bit-computer-rangaraj-smith
+  branch: "main"
+  mentor_last_name: "James"  
+- Instrument Looper Pedal:
+  url: https://github.com/ethanjamesauto/auto-looper
+  branch: "main"
+  mentor_last_name: "Pritchard"
+- Vector Graphics Generator:
+  url: https://github.com/ethanjamesauto/vector_pico
+  branch: "main"
+  mentor_last_name: "Pritchard"
+- PCB Engraver:
+  url : https://github.com/Amp-Lab-at-VT/PCB_Engraver
+  branch: "main"
+  mentor_last_name: "Gibbons" 
+- InspireFly Cubesat Power Supply:
+  url: "https://github.com/joeesser1842/eps"
+  branch: "master"
+  mentor_last_name: "Gibbons" 
+- InspireFly Cubesat On Board Computer:
+  url: "https://github.com/joeesser1842/obdh"
+  branch: "master"
+  mentor_last_name: "Gibbons" 
+- InspireFly Cubesat Telemetry Tracking and Control:
+  url: "https://github.com/joeesser1842/ttc"
+  branch: "master"
+  mentor_last_name: "Gibbons" 
+- Stepper Motor Symphony:
+  url: "https://github.com/Amp-Lab-at-VT/Stepper_Motor_Symphony"
+  branch: "main"
+  mentor_last_name: "Unknown" 
+- IOT Arm:
+  url: "https://github.com/Forsyth-Creations/IOT_Arm"
+  branch: "main"
+  mentor_last_name: "Forsyth" 

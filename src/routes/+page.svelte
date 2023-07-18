@@ -1,2 +1,13 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	// @ts-ignore
+	import Repos from "$lib/data.yaml";
+	import Test from "$lib/test.md";
+	function b64_to_utf8(str) {
+		return (atob(str.split("base64,")[1]));
+	}
+	const ymlText = b64_to_utf8(Repos);
+	const markdown = b64_to_utf8(Test);
+</script>
+
+<p>Text: {ymlText}</p>
+<p>Markdown: {markdown}</p>
