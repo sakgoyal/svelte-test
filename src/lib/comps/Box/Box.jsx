@@ -1,9 +1,5 @@
-import Link from 'next/link';
-import { useState } from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import tw from 'tailwind-styled-components';
-import ReactMarkdown from "react-markdown";
 
 const LinkWrapper = tw(motion.a)`
   sm:w-600

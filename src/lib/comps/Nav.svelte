@@ -1,0 +1,38 @@
+<script>
+	// export default function Navigation() {
+	// 	return (
+	// 		<div className={styles.navbar}>
+	// 			<div className={styles.parentNav}>
+	// 				<div style={{ display: "flex", alignItems: "center" }}>
+	// 					<Hamburger />
+	// 				</div>
+	// 			</div>
+	// 		</div>
+	// 	);
+	// }
+</script>
+
+<style>
+	.navbar {
+		width: 100%;
+		height: 50px;
+		background-color: rgb(49, 36, 37);
+		display: flex;
+		justify-content: space-between;
+		color: rgb(255, 255, 255);
+		align-items: center;
+		top: 0px;
+	}
+
+	.navbar .parentNav {
+		width: 100%;
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.navText {
+		font: 10px;
+		padding: 5px;
+	}
+</style>
