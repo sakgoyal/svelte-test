@@ -1,6 +1,6 @@
 <script>
 	import SvelteMarkdown from "svelte-markdown";
-	import ChecksheetText from "$lib/mentor_checksheet.md?raw";
+	import ChecksheetText from "$lib/markdowns/mentor_checksheet.md?raw";
 </script>
 
 <div class="App">

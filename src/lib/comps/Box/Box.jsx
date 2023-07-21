@@ -116,7 +116,7 @@ const Box = ({ name, branch, href }) => {
 
   return (
     
-      <LinkWrapper className = "flex-none" href={href} >
+      <LinkWrapper class = "flex-none" href={href} >
         <BoxWrapper
           whileHover={{ scale: 1 }}
           whileTap={{ scale: 0 }}
@@ -138,7 +138,7 @@ const Box = ({ name, branch, href }) => {
           )}
 
           <MobileTextWrapper>
-            <p className = "text-2xl bg-black text-white p-2">{name}</p>
+            <p class = "text-2xl bg-black text-white p-2">{name}</p>
             <div>
               <ReactMarkdown>{text}</ReactMarkdown>
             </div>

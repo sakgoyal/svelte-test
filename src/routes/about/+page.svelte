@@ -9,7 +9,7 @@
 	<header class="App-standardPage">
 	 <div class="App-pageHelper">
 		<SvelteMarkdown  source={AboutText} />
-	  <a class= "btn" href="/Leadership">Leadership Team</a>
+	  <a class= "btn" href="/leadership">Leadership Team</a>
 	  </div>
 	</header>
   </div>

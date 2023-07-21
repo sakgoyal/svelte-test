@@ -5,7 +5,6 @@
 	import Repos from "$lib/repos.yaml?raw";
 	import Test from "$lib/markdowns/about.md?raw";
 	import Modal from "$lib/comps/Modal.svelte";
-	import { Type } from "js-yaml";
 
 	let showModal = false;
 

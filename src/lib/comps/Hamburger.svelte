@@ -3,12 +3,12 @@
 
 	// export default function Hamburger() {
 	//   return (
-	//     <div className={styles.dropdown}>
+	//     <div class={styles.dropdown}>
 
-	//       <button className={styles.dropbtn}>
-	//         <AiOutlineMenu className = {styles.dropdownIcon}></AiOutlineMenu>
+	//       <button class={styles.dropbtn}>
+	//         <AiOutlineMenu class = {styles.dropdownIcon}></AiOutlineMenu>
 	//       </button>
-	//       <div className = {styles.dropdownContent}>
+	//       <div class = {styles.dropdownContent}>
 	//         <Link href="/">Home</Link>
 	//         <Link href="/getting_started">Getting Started</Link>
 	//         <Link href="/projects">Projects</Link>

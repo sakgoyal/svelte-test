@@ -1,6 +1,6 @@
 <script>
 	import SvelteMarkdown from "svelte-markdown";
-	import StartingText from "$lib/getting_started_simple.md?raw";
+	import StartingText from "$lib/markdowns/getting_started_simple.md?raw";
 </script>
 
 <div>

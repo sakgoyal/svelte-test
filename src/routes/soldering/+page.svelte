@@ -1,6 +1,6 @@
 <script>
 	import SvelteMarkdown from "svelte-markdown";
-	import SolderingText from "$lib/soldering.md?raw";
+	import SolderingText from "$lib/markdowns/soldering.md?raw";
 </script>
 
 <div>

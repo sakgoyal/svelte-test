@@ -8,10 +8,10 @@ export default function Home() {
 
 
   return (
-    <div className="App max-h-screen">
-      <header className="App-header">
-        <div className="App">
-            <div className = "homeText text-primary-50">
+    <div class="App max-h-screen">
+      <header class="App-header">
+        <div class="App">
+            <div class = "homeText text-primary-50">
               <Typewriter
               onInit={(typewriter)=> {
               typewriter.changeDelay(50)
@@ -23,8 +23,8 @@ export default function Home() {
               }} />
           </div>
           <div style = {{padding: "50px"} }>
-          {(showButton && <Link href="/getting_started" className = "btn">Getting Started</Link>) ||
-          (!showButton && <Link href="/getting_started" style = {{visibility: "hidden"}} className = "btn">Getting Started</Link>)}
+          {(showButton && <Link href="/getting_started" class = "btn">Getting Started</Link>) ||
+          (!showButton && <Link href="/getting_started" style = {{visibility: "hidden"}} class = "btn">Getting Started</Link>)}
           </div>
         </div>
       </header>

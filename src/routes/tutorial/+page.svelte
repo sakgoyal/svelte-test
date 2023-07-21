@@ -1,6 +1,6 @@
 <script>
 	import SvelteMarkdown from "svelte-markdown";
-	import TutorialText from "$lib/tutorial.md?raw";
+	import TutorialText from "$lib/markdowns/tutorial.md?raw";
 </script>
 
 <div>

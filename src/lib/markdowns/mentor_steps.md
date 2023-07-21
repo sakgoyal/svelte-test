@@ -10,14 +10,11 @@ Give it a blank readme
 License MIT
 Create Repo
 
-
 ### Step 2: Give them access to the repo
 
 Share access to it with your mentee
 
-
 ### Step 3: Adding the submodule of their project to the website
-
 
 Open git and follow the following steps:
 
@@ -66,14 +63,11 @@ git push --set-upstream origin Sample_Project
 
 Wonderful! Now go in and make a pull request. Go here: <a href="https://github.com/Amp-Lab-at-VT/web" >Amp Lab Website Github Origin</a>
 
-
 Make sure you are merging from your branch to main before creating the pull request!
 
 Click on the "Pull Request" tab, and ask to merge **your branch** with **master**. This is shown below:
 
-
-Leave a comment for the mentors, and you're good to go! 
-
+Leave a comment for the mentors, and you're good to go!
 
 When you are done with these steps, remember that you are on a branch that has been submitted to master through a PR. Once the PR is accepted, it is wise to just start fresh. Follow these steps to make sure you are always working on the latest code.
 
@@ -82,6 +76,7 @@ Another mentor will see your PR, and approve it. These is done as a sanity check
 What follows are clean up steps to get you back on the latest version of master
 
 **Note that if 'git checkout main' doesn't work, you may need to run 'git checkout master'**
+
 ```bash
 git checkout main
 git branch 
@@ -93,7 +88,7 @@ git branch
 git branch -d name_of_branch
 ```
 
-Finally, run a git pull to update master 
+Finally, run a git pull to update master
 
 ```bash
 git reset --hard origin/master

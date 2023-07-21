@@ -1,6 +1,6 @@
 <script>
 	import SvelteMarkdown from "svelte-markdown";
-	import ResourcesText from "$lib/resources.md?raw";
+	import ResourcesText from "$lib/markdowns/resources.md?raw";
 </script>
 
 <div>

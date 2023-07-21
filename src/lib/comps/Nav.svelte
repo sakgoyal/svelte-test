@@ -1,8 +1,8 @@
 <script>
 	// export default function Navigation() {
 	// 	return (
-	// 		<div className={styles.navbar}>
-	// 			<div className={styles.parentNav}>
+	// 		<div class={styles.navbar}>
+	// 			<div class={styles.parentNav}>
 	// 				<div style={{ display: "flex", alignItems: "center" }}>
 	// 					<Hamburger />
 	// 				</div>
