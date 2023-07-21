@@ -40,6 +40,7 @@ body {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -56,11 +57,11 @@ body {
 }
 
 /* .App-standardPage * {
-  padding: 10px;
-  margin: 10px;
-} */
-
-.App-pageHelper{
+     padding: 10px;
+     margin: 10px;
+}
+ */
+.App-pageHelper {
   padding: 10px;
   margin: 10px;
   display: block;
@@ -81,7 +82,7 @@ hr {
   padding: 10px;
   border-radius: 0.5rem;
   text-decoration: none;
-  color:black;
+  color: black;
   pointer-events: all;
   display: block;
   margin: 2px;
@@ -111,19 +112,18 @@ hr {
 .flex-row-wrap {
   display: flex;
   flex-direction: row;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
 }
 
-
 /* My custom formats */
-
 .homeText {
   font-size: 3em;
   font-weight: 300;
-  /* color: rgb(185, 18, 18); */
+  /* color: rgb(185, 18, 18);
+     */
   text-align: center;
   margin: 0 auto;
   max-width: 600px;
@@ -137,8 +137,7 @@ pre code {
   padding: 20px;
 }
 
-code 
-{
+code {
   display: block;
   font-size: 1em;
   font-weight: 300;
@@ -153,8 +152,7 @@ code
   border-radius: 0.5rem;
 }
 
-h2
-{
+h2 {
   font-size: 2em;
   font-weight: 300;
   color: rgb(0, 0, 0);
@@ -166,12 +164,11 @@ h2
   font-family: 'Georgia Bold'
 }
 
-h2~p{
+h2~p {
   margin: 20px;
 }
 
-h1 
-{
+h1 {
   font-size: 2.5em;
   font-weight: 300;
   text-align: left;
@@ -180,30 +177,100 @@ h1
   padding: 0 0px;
 }
 
-ul
-{
+ul {
   margin-left: 10px;
 }
 
-h1~p{
+h1~p {
   margin: 20px;
 }
 
-li
-{
+li {
   list-style-type: decimal;
   margin-left: 20px;
 }
 
-a
-{
+a {
   color: rgb(185, 18, 18);
   text-decoration: none;
   font-weight: 600;
 }
 
-a:hover
-{
+a:hover {
   color: rgb(185, 18, 18);
   text-decoration: underline;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+
+.wrapper {
+  margin-top: 5%;
+  width: 100%;
+  height: 100%;
+}
+
+.line__1,
+.line__2 {
+  white-space: nowrap;
+  /* keep text in one line */
+  overflow: hidden;
+  /* hide text behind the cursor */
+  margin: 0.5rem auto;
+  font-family: "Major Mono Display", monospace;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.line__1 {
+  border-right: 2px solid rgba(32, 77, 113, 0.9);
+  /* define animation types for text + cursor */
+  animation: animated-text__1 2s steps(30, end) 1s 1 normal both, animated-cursor__1 900ms steps(30, end) 8;
+}
+
+.line__2 {
+  border-right: 2px solid rgba(32, 77, 113, 0.9);
+  /* define animation types for text + cursor */
+  animation: animated-text__2 2s steps(30, end) 1s 1 normal both, animated-cursor__2 900ms steps(30, end) infinite;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+@keyframes animated-cursor__1 {
+  from {
+    border-right-color: rgba(32, 77, 113, 0.9);
+  }
+
+  to {
+    border-right-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@keyframes animated-cursor__2 {
+  from {
+    border-right-color: rgba(32, 77, 113, 0.9);
+  }
+
+  to {
+    border-right-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@keyframes animated-text__1 {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 45rem;
+  }
+}
+
+@keyframes animated-text__2 {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 29rem;
+  }
 }

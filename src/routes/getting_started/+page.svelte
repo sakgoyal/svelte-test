@@ -2,6 +2,8 @@
 	import SvelteMarkdown from "svelte-markdown";
 	import NewMemberText from "$lib/markdowns/new_members.md?raw";
 	import ReturningMemberText from "$lib/markdowns/returning_members.md?raw";
+	import Modal from "$lib/comps/Modal.svelte";
+	let showModal = false;
 	// import IconAndName from "$lib/comps/IconAndName";
 
 	/**
@@ -16,7 +18,13 @@ import { GiSwipeCard } from 'react-icons/gi'
 	*/
 </script>
 
-<div class="min-h-screen">
+
+<!-- <Modal bind:showModal>
+	<SvelteMarkdown source={Test} />
+</Modal> -->
+
+<!-- <button on:click={() => (showModal = true)}> show modal </button> -->
+<!-- <div class="min-h-screen">
 	<div>
 	  <h1 class="m-5">Getting Started:</h1>
 	  <p class="text-left m-5">Below is a list of options for you to engage with our lab. Select one to get started!</p>
@@ -37,6 +45,6 @@ import { GiSwipeCard } from 'react-icons/gi'
 		  It is now easier than ever to get what you need! Just head on over to the Discord, and submit your bill of materials in the <b>purchase request</b> channel
 		</p>
 	  </IconAndName>
-	  <IconAndName href="https://docs.google.com/forms/d/12icOKHbNeDZ8ujELWmOtG40Jp1nv_s4Irs7IfWHoRPA/edit?ts=63d27e7e" icon={<GiSwipeCard> </GiSwipeCard>} title="Get Lab Swipe Access" buttonTitle="Click here to begin" color="#f9f9f9" /> -->
+	  <IconAndName href="https://docs.google.com/forms/d/12icOKHbNeDZ8ujELWmOtG40Jp1nv_s4Irs7IfWHoRPA/edit?ts=63d27e7e" icon={<GiSwipeCard> </GiSwipeCard>} title="Get Lab Swipe Access" buttonTitle="Click here to begin" color="#f9f9f9" />
 	</div>
-  </div>
+  </div> -->
