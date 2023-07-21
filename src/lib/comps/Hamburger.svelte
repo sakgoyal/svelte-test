@@ -1,26 +1,21 @@
 <script>
 	// import {AiOutlineMenu} from 'react-icons/ai'
-
-	// export default function Hamburger() {
-	//   return (
-	//     <div class={styles.dropdown}>
-
-	//       <button class={styles.dropbtn}>
-	//         <AiOutlineMenu class = {styles.dropdownIcon}></AiOutlineMenu>
-	//       </button>
-	//       <div class = {styles.dropdownContent}>
-	//         <Link href="/">Home</Link>
-	//         <Link href="/getting_started">Getting Started</Link>
-	//         <Link href="/projects">Projects</Link>
-	//         <Link href="/about">About</Link>
-	//         <Link href="/resources">Resources</Link>
-	//         {/* <Link href="/useful_links">Useless Links</Link> */}
-	//       </div>
-	//     </div>
-	//   )
-	// }
 </script>
 
+<div class=dropdown>
+
+	  <button class=dropbtn>
+	    <!-- <AiOutlineMenu class = dropdownIcon></AiOutlineMenu> -->
+	  </button>
+	  <div class = dropdownContent>
+	    <a href="/">Home</a>
+	    <a href="/getting_started">Getting Started</a>
+	    <a href="/projects">Projects</a>
+	    <a href="/about">About</a>
+	    <a href="/resources">Resources</a>
+	  </div>
+	</div>
+	
 <style>
 	.dropbtn {
 		border: 0px solid rgb(49, 36, 37);

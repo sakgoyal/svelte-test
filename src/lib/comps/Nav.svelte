@@ -1,17 +1,14 @@
 <script>
-	// export default function Navigation() {
-	// 	return (
-	// 		<div class={styles.navbar}>
-	// 			<div class={styles.parentNav}>
-	// 				<div style={{ display: "flex", alignItems: "center" }}>
-	// 					<Hamburger />
-	// 				</div>
-	// 			</div>
-	// 		</div>
-	// 	);
-	// }
+	import Hamburger from "$lib/comps/Hamburger.svelte";
+	
 </script>
-
+<div class="navbar">
+	<div class="parentNav">
+		<div style="display: flex; align-items: center">
+			<Hamburger />
+		</div>
+	</div>
+</div>
 <style>
 	.navbar {
 		width: 100%;
