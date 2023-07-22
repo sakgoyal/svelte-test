@@ -1,7 +1,7 @@
 <script>
 	import Hamburger from "$lib/comps/Hamburger.svelte";
-	
 </script>
+
 <div class="navbar">
 	<div class="parentNav">
 		<div style="display: flex; align-items: center">
@@ -9,6 +9,7 @@
 		</div>
 	</div>
 </div>
+
 <style>
 	.navbar {
 		width: 100%;

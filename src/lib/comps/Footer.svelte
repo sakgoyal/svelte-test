@@ -15,7 +15,7 @@
 					<a class="hover:text-primary-50 text-gray-400 no-underline" href="/getting_started"> Getting Started </a>
 				</li>
 				<li style="margin-bottom: 5px;">
-					<a class="hover:text-primary-50 text-gray-400 no-underline" href="/Leadership"> Leadership </a>
+					<a class="hover:text-primary-50 text-gray-400 no-underline" href="/leadership"> Leadership </a>
 				</li>
 			</ul>
 		</div>

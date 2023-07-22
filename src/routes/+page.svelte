@@ -17,7 +17,11 @@
 	<header class="App-header">
 		<div class="App">
 			<div class="homeText text-primary-50">
-				<Typewriter interval={50} cursor on:done={buttonDelay} delay={250}>The AMP Lab at Virginia Tech</Typewriter>
+				
+				<!-- cursor color should be dynamic. not sure how to do that yet. -->
+				<Typewriter interval={50} cursor on:done={buttonDelay} delay={250} keepCursorOnFinish={true} class="customCursor">
+					The AMP Lab at Virginia Tech
+				</Typewriter>
 				<!-- <h1 class="text-6xl font-bold">Welcome to the Advanced Manufacturing and Prototyping Lab!</h1>			 -->
 			</div>
 			<div style="padding: 50px">
@@ -28,3 +32,11 @@
 		</div>
 	</header>
 </div>
+
+
+<style>
+	.customCursor {
+		--cursor-width: 0.12ch;
+		--cursor-color: #AA3333;
+	}
+</style>
