@@ -12,7 +12,6 @@
 	// configure tailwind purge // https://tailwindcss.com/docs/optimizing-for-production#writing-purgeable-html
 </script>
 
-<!-- <ProjectCard /> -->
 <div class="App max-h-screen">
 	<header class="App-header">
 		<div class="App">

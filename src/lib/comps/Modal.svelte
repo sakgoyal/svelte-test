@@ -1,12 +1,8 @@
 <script>
-	/**
-	 * @type {boolean}
-	 */
+	/** @type {boolean} */
 	export let showModal;
 
-	/**
-	 * @type {HTMLDialogElement}
-	 */
+	/** @type {HTMLDialogElement} */
 	let dialog;
 
 	$: if (dialog && showModal) dialog.showModal();

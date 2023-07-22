@@ -4,6 +4,7 @@
 	import ReturningMemberText from "$lib/markdowns/returning_members.md?raw";
 	import Modal from "$lib/comps/Modal.svelte";
 	let showModal = false;
+	import GSCard from "$lib/comps/GSCard/GSCard.svelte";
 	// import IconAndName from "$lib/comps/IconAndName";
 
 	/**
@@ -18,6 +19,11 @@ import { GiSwipeCard } from 'react-icons/gi'
 	*/
 </script>
 
+<GSCard let:Title let:Button let:Description>
+	<Title text={"Title 1"} /> 
+	<Description text={"Description 1"} />
+	<Button label={"Button 1"} modalMarkdown={"# testing"}/>
+</GSCard>
 
 <!-- <Modal bind:showModal>
 	<SvelteMarkdown source={Test} />
