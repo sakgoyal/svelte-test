@@ -15,10 +15,10 @@
 <div class="App max-h-screen">
 	<header class="App-header">
 		<div class="App">
-			<div class="homeText text-primary-50">
+			<div class="homeText text-primary-50 customCursor">
 				
 				<!-- cursor color should be dynamic. not sure how to do that yet. -->
-				<Typewriter interval={50} cursor on:done={buttonDelay} delay={250} keepCursorOnFinish={true} class="customCursor">
+				<Typewriter interval={50} cursor on:done={buttonDelay} delay={250} keepCursorOnFinish={true}>
 					The AMP Lab at Virginia Tech
 				</Typewriter>
 				<!-- <h1 class="text-6xl font-bold">Welcome to the Advanced Manufacturing and Prototyping Lab!</h1>			 -->
