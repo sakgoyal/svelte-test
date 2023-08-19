@@ -16,8 +16,6 @@
 	<header class="App-header">
 		<div class="App">
 			<div class="homeText text-primary-50 customCursor">
-				
-				<!-- cursor color should be dynamic. not sure how to do that yet. -->
 				<Typewriter interval={50} cursor on:done={buttonDelay} delay={250} keepCursorOnFinish={true}>
 					The AMP Lab at Virginia Tech
 				</Typewriter>
@@ -36,6 +34,6 @@
 <style>
 	.customCursor {
 		--cursor-width: 0.12ch;
-		--cursor-color: #AA3333;
+		--cursor-color: #AA3333; /** set the cursor color based on theme */
 	}
 </style>

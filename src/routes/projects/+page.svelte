@@ -1,29 +1,32 @@
 <script>
-	import ProjectHero from '$lib/comps/ProjectHero.svelte';
-	/** @type {import('./$types').PageData} */
-	export let data;
+	import ProjectHero from "$lib/comps/ProjectHero.svelte";
+	import YAML from "yaml";
 
-	// https://www.reddit.com/r/sveltejs/comments/rwxmqb/sveltekit_can_you_import_images_from_external/
-	// See if this question is answered. 
+	let repos = {};
+	const promise = fetch("https://raw.githubusercontent.com/Amp-Lab-at-VT/website/master/repos.yaml")
+		.then((res) => res.text())
+		.then((res) => YAML.parse(res))
+		.then((res) => {
+			repos = res;
+			console.log(repos);
+		});
 </script>
-<div class="min-h-screen">
-	<ProjectHero />
+
+<div class="min-h-screen test">
+	{#await promise then}
+		{#each Object.entries(repos) as [title, item]}
+			<ProjectHero href={Object.values(item)[0]} branch={Object.values(item)[1]} mentor={Object.values(item)[2]} {title}/>
+		{/each}
+	{/await}
 </div>
 
-<!-- <div>
-	<header class="App-standardPage">
-		<div class="App-pageHelper">
-			<div>
-				{#each Object.entries(data.ymlText) as [itemNum, item]}
-					<pre class="boxed inline-block">
-						<div><img src="{Object.values(item)[4]}" alt="" width="200px" /></div>
-						{Object.keys(item)[0]} :
-						{Object.keys(item)[1]} : {Object.values(item)[1]}
-						{Object.keys(item)[2]} : {Object.values(item)[2]}
-						{Object.keys(item)[3]} : {Object.values(item)[3]}
-					</pre>
-				{/each}
-			</div>
-		</div>
-	</header>
-</div> -->
+<style>
+	/** make the ProjectHero attribuate into a grid that has a maximum of 2 colums that are centered and take the whole width of the screen */
+	/* @media screen and (min-width: 940px) {
+		.test {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(50%, 2fr));
+			justify-items: center;
+		}
+	} */
+</style>
